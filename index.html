@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <sction class="main-sec container-fluid row g-3 py-3 vh-100">
+    <div class="text-center col-sm-3 col-md-1 nav-b d-flex flex-column ps-2 rounded-4 align-items-center h-100 navb">
+        <div class="logo pt-3">
+            <a href="">
+                <i class="fa-solid fa-wind"></i>
+            </a>
+        </div>
+        <div class="mt-5 active">
+            <a href="#">
+            <i class="fa-solid fa-cloud"></i>
+            <p>Weather</p>
+            </a>
+            
+        </div>
+        <div class="mt-3">
+            <a href="#">
+                <i class="fa-solid fa-bars"></i>
+                <p>Cities</p>
+            </a>
+            
+        </div>
+        <div class="mt-3">
+            <a href="#">
+                <i class="fa-solid fa-map"></i>
+                <p>Map</p>
+            </a>
+        </div>
+        <div class="mt-3">
+            <a href="#">
+                <i class="fa-solid fa-sliders"></i>
+                <p>Settings</p>
+            </a>
+        </div>
+    </div>
+    <div class=" col-sm-9 col-md-7">
+        <input id="searchInput" type="text" class="form-control search-in " placeholder="Search for cities" >
+        <div class="main-weather row pt-2 ps-4 align-items-center">
+            <div class="col-6">
+                <h2 id="city-name" class="city-name">Madrid</h2>
+                <p id="weather-state" class="text-white-50"></p>
+            </div>
+            <div class="col-6">
+                <h3 id="cur-temp" class="main-temp text-center">31°</h3>
+            </div>
+        </div>
+        <div class="temp-days p-2 rounded-2">
+            <p class="temp-title text-uppercase">Today Forecast</p>
+            <div id="forecast-day" class="d-flex justify-content-between align-items-center flex-wrap gap-3 ">
+                <div class="temp-day  d-flex flex-column align-items-center">
+                    <span>6:00 AM</span>
+                    <img src="img/sun.png" alt="" class="weather-ico">
+                    <p class="h-temp">25°</p>
+                </div>
+                <div class="temp-day   d-flex flex-column align-items-center">
+                    <span>6:00 AM</span>
+                    <img src="img/sun.png" alt="" class="weather-ico">
+                    <p class="h-temp">25°</p>
+                </div>
+                <div class="temp-day  d-flex flex-column align-items-center">
+                    <span>6:00 AM</span>
+                    <img src="img/sun.png" alt="" class="weather-ico">
+                    <p class="h-temp">25°</p>
+                </div>
+                <div class="temp-day   d-flex flex-column align-items-center">
+                    <span>6:00 AM</span>
+                    <img src="img/sun.png" alt="" class="weather-ico">
+                    <p class="h-temp">25°</p>
+                </div>
+                <div class="temp-day   d-flex flex-column align-items-center">
+                    <span>6:00 AM</span>
+                    <img src="img/sun.png" alt="" class="weather-ico">
+                    <p class="h-temp">25°</p>
+                </div>
+                <div class="temp-day   d-flex flex-column align-items-center">
+                    <span>6:00 AM</span>
+                    <img src="img/sun.png" alt="" class="weather-ico">
+                    <p class="h-temp">25°</p>
+                </div>
+            </div>
+        </div>
+        <div class="temp-details mt-2 rounded-2 pt-2 ps-2">
+            <p class="t-title text-uppercase">Air conditions</p>
+            <div class="row">
+                <div class="col-md-6 ps-5">
+                    <i class="fa-solid fa-temperature-three-quarters"></i>
+                    <span class="ms-1">Real Feel</span>
+                    <p id="r-temp" class="ms-4 mt-2">31°</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <i class="fa-solid fa-wind"></i>
+                    <span class="ms-1">Wind</span>
+                    <p id="wind" class="ms-4 mt-2">31°</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ps-5">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span class="ms-1">Chance of rain</span>
+                    <p id="ch-rain" class="ms-4 mt-2">31°</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <i class="fa-solid fa-sun"></i>
+                    <span class="ms-1">Uv index</span>
+                    <p id="uv-idx" class="ms-4 mt-2">31°</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-4 d7-temp rounded-4 p-4">
+        <p class="t-title"> 7-DAY FORECAST</p>
+        <div id="d7-table" class="d-flex justify-content-between flex-column gap-2 days-card">
+            <div class="d7-day text-center pe-3 d-flex align-items-center justify-content-between">
+                <span>6:00 AM</span>
+                <div>
+                    <img src="img/sun.png" alt="" class="weather-ico">
+                    <span> Sunny </span>
+                </div>
+                <span class="h-temp">25°</span>
+            </div>
+            <div class="d7-day text-center pe-3 d-flex align-items-center justify-content-between">
+                <span>6:00 AM</span>
+                <div>
+                    <img src="img/sun.png" alt="" class="weather-ico">
+                    <span> Sunny </span>
+                </div>
+                <span class="h-temp">25°</span>
+            </div>
+            <div class="d7-day text-center pe-3 d-flex align-items-center justify-content-between">
+                <span>6:00 AM</span>
+                <div>
+                    <img src="img/sun.png" alt="" class="weather-ico">
+                    <span> Sunny </span>
+                </div>
+                <span class="h-temp">25°</span>
+            </div>
+            <div class="d7-day text-center pe-3 d-flex align-items-center justify-content-between">
+                <span>6:00 AM</span>
+                <div>
+                    <img src="img/sun.png" alt="" class="weather-ico">
+                    <span> Sunny </span>
+                </div>
+                <span class="h-temp">25°</span>
+            </div>
+            <div class="d7-day text-center pe-3 d-flex align-items-center justify-content-between">
+                <span>6:00 AM</span>
+                <div>
+                    <img src="img/sun.png" alt="" class="weather-ico">
+                    <span> Sunny </span>
+                </div>
+                <span class="h-temp">25°</span>
+            </div>
+            <div class="d7-day text-center pe-3 d-flex align-items-center justify-content-between">
+                <span>6:00 AM</span>
+                <div>
+                    <img src="img/sun.png" alt="" class="weather-ico">
+                    <span> Sunny </span>
+                </div>
+                <span class="h-temp">25°</span>
+            </div>
+            <div class="d7-day text-center pe-3 d-flex align-items-center justify-content-between">
+                <span>6:00 AM</span>
+                <div>
+                    <img src="img/sun.png" alt="" class="weather-ico">
+                    <span> Sunny </span>
+                </div>
+                <span class="h-temp">25°</span>
+            </div>
+        </div>
+       
+    </div>
+    </sction>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+    background-color: #0B121E;
+    font-family: 'Rubik', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.nav-b {
+    background-color: #202B3C;
+}
+.nav-b a {
+    color: #888;
+}
+.nav-b i {
+    font-size: 20px;
+}
+.logo i {
+   color: #7394C5;
+   padding: 7px;
+   border-radius: 7px;
+   font-size: 30px;
+   background-color: #364560;
+}
+.active a, .active i {
+    color: #fff;
+}
+.search-in {
+    background-color:#202B3C ;
+    border: none;
+    
+}
+.search-in::placeholder {
+    color: #888;
+    font-size: 14px;
+}
+.search-in:focus {
+    background-color:#202B3C ;
+    color: #888;
+    box-shadow: none;
+}
+.city-name {
+    color: #fff;
+    font-weight: 600;
+    font-size: 40px;
+}
+.main-temp {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+.temp-days {
+    background-color: #202B3C;
+}
+.temp-days span {
+    color: #888;
+}
+.temp-days {
+    color: #888;
+}
+.temp-title {
+    font-weight: 600;
+    font-size: 14px;
+}
+.temp-day {
+    font-weight: 500;
+    border-right: 1px solid #888;
+    padding-right: 40px;
+}
+.temp-day .h-temp {
+    color: #fff;
+}
+.temp-day:nth-last-child(1){
+    border: none;
+}
+.temp-day .weather-ico {
+    width: 50px;
+}
+.temp-details {
+    background-color: #202B3C;
+}
+
+.temp-details i {
+    font-size: 20px;
+    color: #848C95;
+}
+.temp-details {
+    color: #666D79;
+    font-weight: 500;
+}
+.temp-details p {
+    font-size: 20px;
+    color: #FFF;
+}
+.t-title {
+    color: #888;
+    font-size: 14px;
+    font-weight: 600;
+}
+.d7-temp {
+    background-color: #202B3C;
+    color: #888;
+}
+.d7-day .weather-ico {
+    width: 30px;
+}
+.d7-temp .d7-day {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #888;
+}
+.days-card {
+    height: 90%;
+}
+@media (max-width: 768px) {
+    .nav-b {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        height: 100px !important;
+    }
+    .nav-b div {
+        margin: 0 !important;
+        /* margin-top: 10px !important; */
+        padding: 0 !important;
+    }
+    .temp-details {
+        text-align: center !important;
+    }
+    .temp-details div {
+        padding: 0 !important;
+    }
+}
