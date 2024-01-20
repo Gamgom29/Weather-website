@@ -24,10 +24,18 @@ async function getcon(region){
     wState.innerHTML = cur.condition.text ;
     let con = "";
     for (let i = 0 ; i < 24; i++){
-        if(i == 3 || i== 6 || i == 9 || i == 12 || i== 15 || i == 18)
+        if(i == 3 || i== 6 || i == 9 )
         {
             con+=`<div class="temp-day d-flex flex-column align-items-center">
-        <span>${i}:00</span>
+        <span>${i}:00 AM</span>
+        <img src="${forecast.forecastday[0].hour[i].condition.icon}" alt="" class="weather-ico">
+        <p class="h-temp">${forecast.forecastday[0].hour[i].temp_c}°</p>
+    </div>`;
+        }
+        if( i == 12 || i== 15 || i == 18)
+        {
+            con+=`<div class="temp-day d-flex flex-column align-items-center">
+        <span>${i}:00 PM</span>
         <img src="${forecast.forecastday[0].hour[i].condition.icon}" alt="" class="weather-ico">
         <p class="h-temp">${forecast.forecastday[0].hour[i].temp_c}°</p>
     </div>`;
