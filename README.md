@@ -22,8 +22,8 @@ Enter the name of a city in the input field.
 The website will display the current weather information for the specified city.
 
 ## Credits
-Bootstrap
-Weatherapi
-Fontawesome
+<p>Bootstrap</p>
+<P>Weatherapi</P>
+<P>Fontawesome</P>
 
 ## Live Demo
