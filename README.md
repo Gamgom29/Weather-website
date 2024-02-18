@@ -15,7 +15,7 @@ It utilizes HTML5, CSS3, Bootstrap, JavaScript, and a weather API to fetch and d
 <p>CSS3</p>
 <p>Bootstrap</p>
 <p>JavaScript</p>
-<p>Weather API ([https://www.weatherapi.com/])</p>
+<p>Weather API (https://www.weatherapi.com/)</p>
 
 ## Usage
 <p>Enter the name of a city in the input field.</p>
@@ -27,4 +27,4 @@ It utilizes HTML5, CSS3, Bootstrap, JavaScript, and a weather API to fetch and d
 <P>Fontawesome</P>
 
 ## Live Demo
-[https://gamgom29.github.io/Weather-website/]
+https://gamgom29.github.io/Weather-website/
